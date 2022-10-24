@@ -1,12 +1,12 @@
-db.products.updateMany({},
+db.produtos.updateMany({},
   { $set: { avaliacao: 0 } });
-db.products.updateMany(
+db.produtos.updateMany(
   { tags: { $all: ["bovino"] } },
   { $set: { avaliacao: 5 } },
 );
-db.products.updateMany(
+db.produtos.updateMany(
   { tags: { $all: ["ave"] } },
   { $set: { avaliacao: 3 } },
 );
-db.products.find({},
+db.produtos.find({},
   { nome: 1, avaliacao: 1, _id: 0 });
