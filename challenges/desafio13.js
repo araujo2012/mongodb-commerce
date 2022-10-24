@@ -1,4 +1,4 @@
-db.products.update({},
+db.products.updateMany({},
   { $set: { criadoPor: "Ronald McDonald" } });
 db.produtos.find({}, {
   nome: 1,
