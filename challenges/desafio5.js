@@ -1,5 +1,5 @@
 db.produtos.find({
-  $or: { curtidas: { $eq: 36 }, vendidos: { $eq: 85 } },
+  $or: [{ curtidas: { $eq: 36 } }, { vendidos: { $eq: 85 } }],
 }, {
   nome: 1,
   vendidos: 1,
