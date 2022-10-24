@@ -1,1 +1,1 @@
-// setup projeto
+db.produtos.countDocuments();
