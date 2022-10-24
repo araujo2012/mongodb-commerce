@@ -1,5 +1,5 @@
 db.produtos.find({
-  nome: { $ne: ["Big Mac", "McChicken"] },
+  nome: { $nin: ["Big Mac", "McChicken"] },
 }, {
   nome: 1,
   curtidas: 1,
