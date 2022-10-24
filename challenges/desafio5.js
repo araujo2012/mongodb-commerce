@@ -5,4 +5,4 @@ db.produtos.find({
   vendidos: 1,
   curtidas: 1,
   _id: 0,
-}).sort({ vendidos: 1 });
+});
